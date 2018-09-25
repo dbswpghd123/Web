@@ -1,0 +1,760 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>Lock</title>
+		
+		<style>
+		html, body {
+			margin:0;
+		}
+
+		.ring1 {
+			width:200px;
+			height:400px;
+			background:white;
+			position:absolute;
+			border-radius:375px/400px;
+			top:50px;
+			left:150px;
+		}
+
+		.ring2 {
+			width:140px;
+			height:340px;
+			background:black;
+			position:absolute;
+			border-radius:335px/360px;
+			top:80px;
+			left:180px;
+		}
+
+		.ring3 {
+			width:210px;
+			height:210px;
+			background:white;
+			position:absolute;
+			top:300px;
+			left:135px;
+			z-index:1;
+		}
+
+		.ring4 {
+			width:100px;
+			height:100px;
+			background:white;
+			position:absolute;
+			top:245px;
+			left:125px;
+			z-index:2;
+		}
+
+		.ring5 {
+			width:220px;
+			height:420px;
+			background:black;
+			position:absolute;
+			border-radius:395px/420px;
+			top:40px;
+			left:140px;
+			z-index:-1; 
+		}
+
+		.ring6 {
+			width:120px;
+			height:320px;
+			background:white;
+			position:absolute;
+			border-radius:375px/380px;
+			top:90px;
+			left:190px;
+		}
+
+		.ring7 {
+			width:40px;
+			height:10px;
+			position:absolute;
+			background:black;
+			top:235px;
+			left:150px;
+		}
+
+		.arrow {
+			height:0px;
+			width:0px;
+			border-left:10px solid white;
+			border-right:10px solid white;
+			border-top:10px solid black;
+			position:absolute;
+			background:white;
+			top:268px;
+			left:240px;
+			z-index:10;
+		}
+
+		.lock1 {
+			width:270px;
+			height:270px;
+			border-radius:135px;
+			background:black;
+			position:absolute;
+			top:240px;
+			left:115px;
+			z-index:3; 
+		}
+
+		.lock2 {
+			width:250px;
+			height:250px;
+			border-radius:125px;
+			background:white;
+			position:absolute;
+			top:250px;
+			left:125px;
+			z-index:4; 
+		}
+
+		.lock3 {
+			width:190px;
+			height:190px;
+			border-radius:95px;
+			background:black;
+			position:absolute;
+			top:280px;
+			left:155px;
+			z-index:5; 
+		}
+
+		.lock4 {
+			width:80px;
+			height:80px;
+			border-radius:40px;
+			background:white;
+			position:absolute;
+			z-index:6;
+			top:335px;
+			left:210px;
+		}
+
+		.lock5 {
+			width:68px;
+			height:68px;
+			border-radius:34px;
+			background:black;
+			position:absolute;
+			z-index:7;
+			top:341px;
+			left:216px;
+		}
+
+		.dial0 {
+			width:5px;
+			height:20px;
+			background:white;
+			position:absolute;
+			top:280px;
+			left:247.5px;
+			z-index:6;
+		}
+
+		.dial20 {
+			width:5px;
+			height:20px;
+			background:white;
+			position:absolute;
+			top:450px;
+			left:247.5px;
+			z-index:6;
+		}
+
+		.dial30 {
+			width:20px;
+			height:5px;
+			background:white;
+			position:absolute;
+			top:370px;
+			left:155px;
+			z-index:6;
+		}
+
+		.dial10 {
+			width:20px;
+			height:5px;
+			background:white;
+			position:absolute;
+			top:370px;
+			left:325px;
+			z-index:6;
+		}
+
+		.dial5{
+			width:20px;
+			height:5px;
+			transform:rotate(135deg);
+			background:white;
+			position:absolute;
+			top:311.25px;
+			left:298.75px;
+			z-index:6;
+		}
+
+		.dial15{
+			width:20px;
+			height:5px;
+			transform:rotate(45deg);
+			background:white;
+			position:absolute;
+			top:430px;
+			left:304px;
+			z-index:6;
+		}
+
+		.dial35{
+			width:20px;
+			height:5px;
+			transform:rotate(45deg);
+			background:white;
+			position:absolute;
+			top:311.25px;
+			left:181px;
+			z-index:6;
+		}
+
+		.dial25{
+			width:20px;
+			height:5px;
+			transform:rotate(135deg);
+			background:white;
+			position:absolute;
+			top:430px;
+			left:177px;
+			z-index:6;
+		}
+
+		.dials1{
+			width:10px;
+			height:5px;
+			transform:rotate(-81deg);
+			background:white;
+			position:absolute;
+			top:283px;
+			left:259px;
+			z-index:7;
+		}
+
+		.dials2{
+			width:10px;
+			height:5px;
+			transform:rotate(-72deg);
+			background:white;
+			position:absolute;
+			top:286px;
+			left:273px;
+			z-index:7;
+		}
+
+
+		.dials3{
+			width:10px;
+			height:5px;
+			transform:rotate(-63deg);
+			background:white;
+			position:absolute;
+			top:292px;
+			left:286px;
+			z-index:7;
+		}
+
+		.dials4 {
+			width:10px;
+			height:5px;
+			transform:rotate(-54deg);
+			background:white;
+			position:absolute;
+			top:299px;
+			left:298px;
+			z-index:7;
+		}
+
+		.dials6 {
+			width:10px;
+			height:5px;
+			transform:rotate(-36deg);
+			background:white;
+			position:absolute;
+			top:318px;
+			left:317px;
+			z-index:7;
+		}
+
+
+		.dials7{
+			width:10px;
+			height:5px;
+			transform:rotate(-27deg);
+			background:white;
+			position:absolute;
+			top:329px;
+			left:325px;
+			z-index:7;
+		}
+
+
+		.dials8{
+			width:10px;
+			height:5px;
+			transform:rotate(-18deg);
+			background:white;
+			position:absolute;
+			top:342px;
+			left:330px;
+			z-index:8;
+		}
+
+
+		.dials9{
+			width:10px;
+			height:5px;
+			transform:rotate(-9deg);
+			background:white;
+			position:absolute;
+			top:356px;
+			left:334px;
+			z-index:8;
+		}
+
+		.dials11{
+			width:10px;
+			height:5px;
+			transform:rotate(9deg);
+			background:white;
+			position:absolute;
+			top:384px;
+			left:335px;
+			z-index:7;
+		}
+
+		.dials12{
+			width:10px;
+			height:5px;
+			transform:rotate(18deg);
+			background:white;
+			position:absolute;
+			top:397px;
+			left:332px;
+			z-index:7;
+		}
+
+
+		.dials13{
+			width:10px;
+			height:5px;
+			transform:rotate(27deg);
+			background:white;
+			position:absolute;
+			top:410px;
+			left:328px;
+			z-index:7;
+		}
+
+		.dials14 {
+			width:10px;
+			height:5px;
+			transform:rotate(36deg);
+			background:white;
+			position:absolute;
+			top:422px;
+			left:321px;
+			z-index:7;
+		}
+
+		.dials16 {
+			width:10px;
+			height:5px;
+			transform:rotate(54deg);
+			background:white;
+			position:absolute;
+			top:443px;
+			left:302px;
+			z-index:7;
+		}
+
+
+		.dials17{
+			width:10px;
+			height:5px;
+			transform:rotate(63deg);
+			background:white;
+			position:absolute;
+			top:451px;
+			left:290px;
+			z-index:7;
+		}
+
+		
+		.dials18{
+			width:10px;
+			height:5px;
+			transform:rotate(72deg);
+			background:white;
+			position:absolute;
+			top:457px;
+			left:277px;
+			z-index:7;
+		}
+
+
+		.dials19{
+			width:10px;
+			height:5px;
+			transform:rotate(81deg);
+			background:white;
+			position:absolute;
+			top:461px;
+			left:263px;
+			z-index:7;
+		}
+
+		.dials21{
+			width:10px;
+			height:5px;
+			transform:rotate(99deg);
+			background:white;
+			position:absolute;
+			top:462px;
+			left:229px;
+			z-index:7;
+		}
+
+		.dials22{
+			width:10px;
+			height:5px;
+			transform:rotate(108deg);
+			background:white;
+			position:absolute;
+			top:458px;
+			left:215px;
+			z-index:8;
+		}
+
+
+		.dials23{
+			width:10px;
+			height:5px;
+			transform:rotate(-63deg);
+			background:white;
+			position:absolute;
+			top:452px;
+			left:202px;
+			z-index:7;
+		}
+
+		.dials24 {
+			width:10px;
+			height:5px;
+			transform:rotate(-54deg);
+			background:white;
+			position:absolute;
+			top:444px;
+			left:190px;
+			z-index:7;
+		}
+
+		.dials26 {
+			width:10px;
+			height:5px;
+			transform:rotate(-36deg);
+			background:white;
+			position:absolute;
+			top:422px;
+			left:169px;
+			z-index:7;
+		}
+
+
+		.dials27{
+			width:10px;
+			height:5px;
+			transform:rotate(-27deg);
+			background:white;
+			position:absolute;
+			top:410px;
+			left:163px;
+			z-index:7;
+		}
+
+
+		.dials28{
+			width:10px;
+			height:5px;
+			transform:rotate(-18deg);
+			background:white;
+			position:absolute;
+			top:397px;
+			left:158px;
+			z-index:8;
+		}
+
+
+		.dials29{
+			width:10px;
+			height:5px;
+			transform:rotate(-9deg);
+			background:white;
+			position:absolute;
+			top:384px;
+			left:155px;
+			z-index:8;
+		}
+
+		.dials31{
+			width:10px;
+			height:5px;
+			transform:rotate(9deg);
+			background:white;
+			position:absolute;
+			top:355px;
+			left:156px;
+			z-index:7;
+		}
+
+		.dials32{
+			width:10px;
+			height:5px;
+			transform:rotate(18deg);
+			background:white;
+			position:absolute;
+			top:342px;
+			left:160px;
+			z-index:7;
+		}
+
+
+		.dials33{
+			width:10px;
+			height:5px;
+			transform:rotate(27deg);
+			background:white;
+			position:absolute;
+			top:329px;
+			left:166px;
+			z-index:7;
+		}
+
+		.dials34 {
+			width:10px;
+			height:5px;
+			transform:rotate(36deg);
+			background:white;
+			position:absolute;
+			top:318px;
+			left:173px;
+			z-index:7;
+		}
+
+		.dials36 {
+			width:10px;
+			height:5px;
+			transform:rotate(54deg);
+			background:white;
+			position:absolute;
+			top:298px;
+			left:194px;
+			z-index:7;
+		}
+
+
+		.dials37{
+			width:10px;
+			height:5px;
+			transform:rotate(63deg);
+			background:white;
+			position:absolute;
+			top:291px;
+			left:206px;
+			z-index:7;
+		}
+
+		
+		.dials38{
+			width:10px;
+			height:5px;
+			transform:rotate(72deg);
+			background:white;
+			position:absolute;
+			top:286px;
+			left:218px;
+			z-index:7;
+		}
+
+
+		.dials39{
+			width:10px;
+			height:5px;
+			transform:rotate(81deg);
+			background:white;
+			position:absolute;
+			top:283px;
+			left:231px;
+			z-index:7;
+		}
+
+		.num0 {
+			color:white;
+			position:absolute;
+			top:290px;
+			left:244.5px;
+			z-index:9;
+		}
+
+		.num10 {
+			color:white;
+			position:absolute;
+			top:342px;
+			left:295px;
+			z-index:9;
+			transform:rotate(90deg);
+		}
+
+		.num20 {
+			color:white;
+			position:absolute;
+			top:399px;
+			left:239.5px;
+			z-index:9;
+			transform:rotate(180deg);
+		}
+
+		.num30 {
+			color:white;
+			position:absolute;
+			top:342px;
+			left:185px;
+			z-index:9;
+			transform:rotate(270deg);
+		}
+
+		.num5 {
+			color:white;
+			position:absolute;
+			top:303px;
+			left:283px;
+			z-index:9;
+			transform:rotate(45deg);
+		}
+
+		.num15 {
+			color:white;
+			position:absolute;
+			top:381px;
+			left:284px;
+			z-index:9;
+			transform:rotate(135deg);
+		}
+
+		.num25 {
+			color:white;
+			position:absolute;
+			top:380px;
+			left:198px;
+			z-index:9;
+			transform:rotate(-135deg); 
+		}
+
+		.num35 {
+			color:white;
+			position:absolute;
+			top:304px;
+			left:202px;
+			z-index:9;
+			transform:rotate(-45deg); 
+		}
+
+		</style>
+
+
+		
+
+	</head>
+	
+
+	<body>
+		<div class="ring1"></div>
+		<div class="ring2"></div>
+		<div class="ring3"></div>
+		<div class="ring4"></div>
+		<div class="ring5"></div>
+		<div class="ring6"></div>
+		<div class="ring7"></div>
+
+		<div class="arrow"></div>
+
+		<div class="lock1"></div>
+		<div class="lock2"></div>
+		<div class="lock3"></div>
+		<div class="lock4"></div>
+		<div class="lock5"></div>
+
+		<div class="dial0"></div>
+		<div class="dial20"></div>
+		<div class="dial10"></div>
+		<div class="dial30"></div>
+
+		<div class="dial5"></div>
+		<div class="dial15"></div>
+		<div class="dial25"></div>
+		<div class="dial35"></div>
+
+
+		<div class="dials1"></div>
+		<div class="dials2"></div>
+		<div class="dials3"></div>
+		<div class="dials4"></div>
+
+		<div class="dials6"></div>
+		<div class="dials7"></div>
+		<div class="dials8"></div>
+		<div class="dials9"></div>
+
+		<div class="dials11"></div>
+		<div class="dials12"></div>
+		<div class="dials13"></div>
+		<div class="dials14"></div>
+
+		<div class="dials16"></div>
+		<div class="dials17"></div>
+		<div class="dials18"></div>
+		<div class="dials19"></div>
+
+		<div class="dials21"></div>
+		<div class="dials22"></div>
+		<div class="dials23"></div>
+		<div class="dials24"></div>
+
+		<div class="dials26"></div>
+		<div class="dials27"></div>
+		<div class="dials28"></div>
+		<div class="dials29"></div>
+
+		<div class="dials31"></div>
+		<div class="dials32"></div>
+		<div class="dials33"></div>
+		<div class="dials34"></div>
+
+		<div class="dials36"></div>
+		<div class="dials37"></div>
+		<div class="dials38"></div>
+		<div class="dials39"></div>
+
+
+		<h3 class="num0"><b>0</b></h3>
+		<h3 class="num5"><b>5</b></h3>
+		<h3 class="num10"><b>10</b></h3>
+		<h3 class="num15"><b>15</b></h3>
+		<h3 class="num20"><b>20</b></h3>
+		<h3 class="num25"><b>25</b></h3>
+		<h3 class="num30"><b>30</b></h3>
+		<h3 class="num35"><b>35</b></h3>
+	
+	</body>
+</html>
