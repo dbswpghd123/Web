@@ -1,0 +1,180 @@
+html, body {
+	font-family: 'Lato', sans-serif;
+	font-family: 'Open Sans', sans-serif;
+}
+
+@font-face {
+	font-family: lato;
+	src: url(https://fonts.googleapis.com/css?family=Lato|Open+Sans) format('truetype'); 
+	}
+
+h1 {
+	font-size:100px;
+	font-weight: 800;
+	line-height: 30px;
+	font-family: lato;
+}
+
+h2 {
+	font-size:24px;
+	font-weight: 700;
+	font-family: Lato;
+}
+
+h3 {
+	font-size:20px;
+	font-weight: 200;
+	font-family: Lato;
+	line-height: 15px;
+
+}
+
+h4 {
+	font-size: 20px;
+	line-height: 0px;
+	font-weight: 200;
+	font-family:Lato;
+}
+
+h5 {
+	font-size:14px;
+	font-family: Lato;
+	font-weight: 400;
+	line-height: 0px;
+	text-indent: -3px;
+}
+
+h6 {
+	font-size:16px;
+	font-family: Open Sans;
+	font-weight:600;
+	line-height: 0px;
+}
+
+p {
+	font-size:16px;
+	font-family: Open Sans;
+	font-weight:200;
+	line-height:21px;
+}
+
+
+.white {
+	color: white;
+}
+
+.black {
+	color: black;
+}
+
+.yellow {
+	color: rgb(255,212,24);
+}
+
+.title {
+	position: absolute;
+	top:0px;
+	left:20px;
+	z-index: 2;
+}
+
+.dateplace {
+	position: absolute;
+	top:480px;
+	left:20px;
+	z-index: 2;
+}
+
+.divider{
+	position: absolute;
+	top:600px;
+	left:0px;
+	height:330px;
+	width:1680px; 
+	background-color:white;
+	z-index: 2.5;
+}
+
+.details {
+	position: absolute;
+	top: 610px;
+	z-index: 3;
+	left:20px;
+}
+
+.detaildetails {
+	position: absolute;
+	top: 700px;
+	z-index: 3;
+	left:-7px;
+}
+
+
+.SA {
+	position: absolute;
+	top:614px;
+	z-index: 3;
+	left:400px;
+	width: 360px;
+}
+
+.SADetails {
+	position: absolute;
+	top:660px;
+	z-index: 3;
+	left:400px;
+	width: 350px;
+}
+
+.SB {
+	position: absolute;
+	top:614px;
+	z-index: 3;
+	left:850px;
+	width: 360px;
+}
+
+.SBDetails {
+	position: absolute;
+	top:660px;
+	z-index: 3;
+	left:850px;
+	width: 350px;
+}
+
+.SC {
+	position: absolute;
+	top:614px;
+	z-index: 3;
+	left:1300px;
+	width: 360px;
+}
+
+.SCDetails {
+	position: absolute;
+	top:660px;
+	z-index: 3;
+	left:1300px;
+	width: 350px;
+}
+
+.warning {
+	position: absolute;
+	top:538px;
+	text-align: right;
+	left:820px;
+	font-family: Open Sans;
+	color: rgb(255,212,24);
+	z-index: 3;
+}
+
+.globe1 {
+	height: 950px;
+	width: 950px;
+	background: white;
+	z-index: 0.5;
+	border-radius: 50%;
+	position: absolute;
+	top:-50px;
+	left: 650px;
+}
