@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head> 
+  <title>Visual representation</title>
+  <style type="text/css">
+    body {
+   background-color: rgb(59,165,155);
+   margin:0;
+}
+  #target {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #button {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  </style>
+</head>
+<body>
+  
+  <img id="target" src="http://i63.tinypic.com/keuonm.jpg" width="1200px" height="800px" opacity="1" />
+  <div>
+  <input id="button" type="button" onclick="nextPic()" value="Workout!"/>
+  </div>
+  
+  
+    <script>
+    var target = document.getElementById('target');
+    var counter = 0;
+    var myPictures = [
+        "http://i63.tinypic.com/keuonm.jpg",
+        "http://i65.tinypic.com/2k115u.jpg",
+        "http://i68.tinypic.com/2qx8e91.jpg",
+        "http://i63.tinypic.com/2j13gnp.jpg",
+        "http://i63.tinypic.com/f59ug.jpg"
+    ];
+
+    function nextPic() {
+      counter += 1;
+      if (counter > myPictures.length -1) {
+        counter = 0;
+      }
+      target.src = myPictures[counter];
+    }
+  </script>
+</body>
+</html>
