@@ -1,0 +1,251 @@
+html, body {
+	background: rgb(154,28,31);
+}
+
+.space {
+	height:100px;
+}
+
+
+.slots {
+	background: white;
+	width: 1000px;
+	height: 700px;
+	position: absolute;
+	left: 300px;
+	top:100px;
+	border-radius: 50px/50px;
+}
+
+.slottop {
+	background: black;
+	width: 1000px;
+	height: 50px;
+	position: absolute;
+	left: 300px;
+	top: 100px;
+	border-radius: 200px/200px;
+	z-index: 1;
+}
+
+.slotbot {
+	background: black;
+	width: 1000px;
+	height: 50px;
+	position: absolute;
+	left: 300px;
+	top: 750px;
+	border-radius: 200px/200px;
+	z-index: 1;
+}
+
+.slotleft {
+	background: black;
+	width: 60px;
+	height: 700px;
+	position: absolute;
+	top: 100px;
+	left: 300px;
+	border-radius: 200px/200px;
+	z-index: 1;
+}
+
+.slotright {
+	background: black;
+	width: 60px;
+	height: 700px;
+	position: absolute;
+	top: 100px;
+	left: 1240px;
+	border-radius: 200px/200px;
+	z-index: 1;
+}
+
+.slotdiv1{
+	background: black;
+	width: 25px;
+	height: 700px;
+	position: absolute;
+	top: 100px;
+	left: 635px;
+}
+
+.slotdiv2{
+	background: black;
+	width: 25px;
+	height: 700px;
+	position: absolute;
+	top: 100px;
+	left: 940px;
+}
+
+.note{
+	color: white;
+	position: absolute;
+	left:360px;
+}
+
+.balance{
+	color: white;
+	position: absolute;
+	left:500px;
+}
+
+#bet {
+    background-color: black;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 24px;
+    margin: 4px 2px;
+    cursor: pointer;
+    z-index:6;
+    position: absolute;
+    top:870px;
+    left: 1140px;
+}
+
+
+#bet1 {
+
+    background-color: black;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    margin-left:400px;
+    margin-top:710px; 
+    z-index:6;
+    margin-left: 350px;
+    margin-right: 30px;
+}
+
+#bet2 {
+
+    background-color: black;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    z-index:6;
+    margin-right: 30px;
+
+}
+
+#bet3 {
+
+    background-color: black;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    z-index:6;
+    margin-right: 30px;
+}
+
+#bet5 {
+
+    background-color: black;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    z-index:6;
+    margin-right: 30px;
+}
+
+#bet10 {
+
+    background-color: black;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    z-index:6;
+    margin-right: 50px;
+}
+
+.mixing1 {
+	position: absolute;
+	top:150px;
+	left:360px;
+	z-index: 0;
+}
+
+.mixing2 {
+	position: absolute;
+	top:150px;
+	left:660px;
+	z-index: 0;
+}
+
+.mixing3 {
+	position: absolute;
+	top:150px;
+	left:965px;
+	z-index: 0;
+}
+
+#slot1 {
+	height:600px;
+	width: 275px;
+	position: absolute;
+	z-index: 1;
+	background: white;
+	top:150px;
+	left:360px;
+}
+
+#slot2 {
+	height:600px;
+	width: 275px;
+	position: absolute;
+	z-index: 1;
+	background: white;
+	top:150px;
+	left:660px;
+}
+
+#slot3 {
+	height:600px;
+	width: 275px;
+	position: absolute;
+	z-index: 1;
+	background: white;
+	top:150px;
+	left:965px;
+}
+
+.test {
+	background: white;
+	height: 200px;
+	width: 400px;
+}
