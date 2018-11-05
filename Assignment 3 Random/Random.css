@@ -193,21 +193,21 @@ html, body {
     margin-right: 50px;
 }
 
-.mixing1 {
+#mixing1 {
 	position: absolute;
 	top:150px;
 	left:360px;
 	z-index: 0;
 }
 
-.mixing2 {
+#mixing2 {
 	position: absolute;
 	top:150px;
 	left:660px;
 	z-index: 0;
 }
 
-.mixing3 {
+#mixing3 {
 	position: absolute;
 	top:150px;
 	left:965px;

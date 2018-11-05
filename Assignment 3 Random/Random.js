@@ -2,7 +2,7 @@ var balance=50;
 
 document.getElementById("balance").innerHTML = balance;
 
-var betamount = 0;
+var betamount = 1;
 
 $("#bet1").click(function() {
 	betamount = 1;
@@ -30,35 +30,62 @@ $("#bet10").click(function() {
 })
 
 $("#bet").click(function() {
-	random1=Math.floor(Math.random() * 7);
-	random2=Math.floor(Math.random() * 7);
-	random3=Math.floor(Math.random() * 7);
-	document.getElementById("betamount").innerHTML = betamount;
-	document.getElementById("random1").innerHTML = random1;
-	document.getElementById("random2").innerHTML = random2;
-	document.getElementById("random3").innerHTML = random3;
+	balance = balance - betamount; // this doesn't work
+
+//	document.getElementById('mixing1').style.zIndex = 2; commented for easier work
+//	document.getElementById('mixing2').style.zIndex = 2; commented for easier work
+//	document.getElementById('mixing3').style.zIndex = 2; commented for easier work
+
+
+
+//	setTimeout(function(){ commented for easier work
+//	document.getElementById('mixing1').style.zIndex = 0; commented for easier work
+	random1=Math.floor(Math.random() * 7); 
+	random1 = "slot"+random1+".jpg"
+	$("#randomslot1").attr("src",random1); 
+//	}, 1000); commented for easier work
+
+//	setTimeout(function(){ commented for easier work
+//	document.getElementById('mixing2').style.zIndex = 0; commented for easier work
+	random2=Math.floor(Math.random() * 7); 
+	random2 = "slot"+random2+".jpg"     
+	$("#randomslot2").attr("src",random2);
+//	}, 2500); commented for easier work
+
+//	setTimeout(function(){ commented for easier work
+//	document.getElementById('mixing3').style.zIndex = 0; commented for easier work
+	random3=Math.floor(Math.random() * 7); 
+	random3 = "slot"+random3+".jpg" 
+	$("#randomslot3").attr("src",random3);
+//	}, 4000); commented for easier work
+
+	$("#betamount").html(betamount);  
+	$("#random1").html(random1);
+	$("#random2").html(random2);    
+	$("#random3").html(random3);            
+	$("#mixing1").html(mixing1);
+
+	if (random1 = random2 = random3) { // this doesn't work
+		balance = balance + (betamount * 55); // this doesn't work
+	}
+
+	if (random1 = random2 = random3 = slot4.jpg) { // this doesn't work
+		balance = balance + (betamount * 555); // this doesn't work
+		alert("JACKPOT!"); // this doesn't work
+	}
+
+	if (random1 = random2 = random3 = slot1.jpg) { // this doesn't work
+		balance = balance + (betamount * 996); // this doesn't work
+		alert("BATPOT!"); // this doesn't work
+	}
+
+
+
+	/*if (random1 || random2 || random3 = slot1.jpg) {
+	balance = balance + (betamount * 1);
+	}
+
+	if (random1 && random2 || random2 && random3 || random1 && random3 = slot1.jpg) {
+	balance = balance + (betamount * 1);
+	}*/ //I don't get why these are not working
 })
-
-var $random1 = "slot"+random1+".jpg"
- $("#randomslot1").attr("src",$random1)
-
-/*
-	if (random1 = 0) {
- $("#randomslot1").attr("src","slot0.jpg")
-}
-if (random1 = 1) {
- $("#randomslot1").attr("src","slot1.jpg")
-}
-if (random1 = 2) {
- $("#randomslot1").attr("src","slot2.jpg")
-}
-if (random1 = 3) {
- $("#randomslot1").attr("src","slot3.jpg")
-}
-if (random1 = 4) {
- $("#randomslot1").attr("src","slot4.jpg")
-}
-if (random1 = 5) {
- $("#randomslot1").attr("src","slot5.jpg")
-}
-*/
