@@ -30,34 +30,34 @@ $("#bet10").click(function() {
 })
 
 $("#bet").click(function() {
-	balance = balance - betamount; // this doesn't work
+	balance = balance - betamount;
 
-//	document.getElementById('mixing1').style.zIndex = 2; commented for easier work
-//	document.getElementById('mixing2').style.zIndex = 2; commented for easier work
-//	document.getElementById('mixing3').style.zIndex = 2; commented for easier work
+document.getElementById('mixing1').style.zIndex = 2; 
+document.getElementById('mixing2').style.zIndex = 2;
+document.getElementById('mixing3').style.zIndex = 2; 
 
 
 
-//	setTimeout(function(){ commented for easier work
-//	document.getElementById('mixing1').style.zIndex = 0; commented for easier work
+setTimeout(function(){ 
+document.getElementById('mixing1').style.zIndex = 0; 
 	random1=Math.floor(Math.random() * 7); 
 	random1 = "slot"+random1+".jpg"
 	$("#randomslot1").attr("src",random1); 
-//	}, 1000); commented for easier work
+}, 1000); 
 
-//	setTimeout(function(){ commented for easier work
-//	document.getElementById('mixing2').style.zIndex = 0; commented for easier work
+setTimeout(function(){ 
+document.getElementById('mixing2').style.zIndex = 0; 
 	random2=Math.floor(Math.random() * 7); 
 	random2 = "slot"+random2+".jpg"     
 	$("#randomslot2").attr("src",random2);
-//	}, 2500); commented for easier work
+}, 2500); 
 
-//	setTimeout(function(){ commented for easier work
-//	document.getElementById('mixing3').style.zIndex = 0; commented for easier work
+setTimeout(function(){ 
+document.getElementById('mixing3').style.zIndex = 0; 
 	random3=Math.floor(Math.random() * 7); 
 	random3 = "slot"+random3+".jpg" 
 	$("#randomslot3").attr("src",random3);
-//	}, 4000); commented for easier work
+}, 4000); 
 
 	$("#betamount").html(betamount);  
 	$("#random1").html(random1);
@@ -65,6 +65,7 @@ $("#bet").click(function() {
 	$("#random3").html(random3);            
 	$("#mixing1").html(mixing1);
 
+	
 	if (random1 = random2 = random3) { // this doesn't work
 		balance = balance + (betamount * 55); // this doesn't work
 	}
