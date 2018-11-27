@@ -1,0 +1,120 @@
+body{
+	background: black;	
+	margin: 0;
+	height: 1250px;
+}
+
+h1{
+	color: white;
+}
+img{
+	max-width:100%;
+	max-height:100%;
+}
+
+#nigiririce {
+	width: 380px;
+	position: fixed;
+    top:385px;
+    left:610px;
+}
+
+#bonito {
+	width: 500px;
+	position: fixed;
+    top:340px;
+    left:550px;
+    z-index: 1;
+}
+
+#bonitoginger {
+	width: 130px;
+	position: fixed;
+    top:360px;
+    left:690px;
+    z-index: 2;
+}
+
+
+#bonitoonion1 {
+	width: 30px;
+	position: fixed;
+    top:368px;
+    left:747px;
+    z-index: 3;
+}
+
+#bonitoonion2 {
+	width: 40px;
+	position: fixed;
+    top:355px;
+    left:710px;
+    z-index: 4;
+}
+
+#bonitoonion3 {
+	width: 35px;
+	position: fixed;
+    top:345px;
+    left:735px;
+    z-index: 5;
+}
+
+#bonitoonion4 {
+	width: 35px;
+	position: fixed;
+    top:350px;
+    left:720px;
+    z-index: 6;
+}
+
+#bonitoonion5 {
+	width: 40px;
+	position: fixed;
+    top:350px;
+    left:740px;
+    z-index: 7;
+}
+
+#bonitoonion6 {
+	width: 30px;
+	position: fixed;
+    top:345px;
+    left:720px;
+    z-index: 8;
+}
+
+#bonitoonion7 {
+	width: 30px;
+	position: fixed;
+    top:335px;
+    left:740px;
+    z-index: 9;
+}
+
+#bonitoonion8 {
+	width: 35px;
+	position: fixed;
+    top:330px;
+    left:713px;
+    z-index: 10;
+}
+
+#bonitoonion9 {
+	width: 20px;
+	position: fixed;
+    top:335px;
+    left:708px;
+    z-index: 11;
+}
+
+#bonitoonion10 {
+	position: fixed;
+	width: 43px;
+    top:335px;
+    left:730px;
+    z-index: 12;
+}
+
+
+
