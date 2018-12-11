@@ -1,0 +1,51 @@
+body{
+	background: black;	
+	margin: 0;
+	height: 1500px;
+}
+
+img{
+	max-width:100%;
+	max-height:100%;
+}
+
+#nigiririce {
+	width: 380px;
+	position: fixed;
+    top:385px;
+    left:610px;
+}
+
+#amaebi1 {
+	width: 650px;
+	position: fixed;
+	top: 325px;
+	left: 635px;
+	z-index: 1;
+	position: fixed;
+}
+
+#amaebi2 {
+	width: 650px;
+	position: fixed;
+	top: 365px;
+	left: 590px;
+	z-index: 1;
+}
+
+#amaebiinfo {
+    color: white;
+    width: 500px;
+    position: fixed;
+    top:410px;
+    left: 900px;
+    opacity: 0;
+}
+
+#amaebiname {
+    color: white;
+    position: fixed;
+    top:680px;
+    left:740px;
+    z-index: 5;
+}

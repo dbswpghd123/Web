@@ -1,0 +1,45 @@
+body{
+	background: black;	
+	margin: 0;
+	height: 1350px;
+}
+
+
+img{
+	max-width:100%;
+	max-height:100%;
+}
+
+
+#nigiririce {
+	width: 380px;
+	position: fixed;
+    top:385px;
+    left:610px;
+}
+
+#chutoro{
+	width: 600px;
+	position:fixed;
+	top:350px;
+	left:550px;
+	z-index: 1;
+}
+
+#chutoroinfo {
+    color: white;
+    width: 500px;
+    position: fixed;
+    top:240px;
+    left: 900px;
+    opacity: 0;
+}
+
+#chutoroname {
+    color: white;
+    position: fixed;
+    top:680px;
+    left:735px;
+    z-index: 5;
+}
+

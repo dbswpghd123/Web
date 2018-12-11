@@ -1,8 +1,10 @@
 body{
 	background: black;	
 	margin: 0;
-	height: 1250px;
+	height: 1450px;
 }
+
+/*height: 1250px;*/
 
 h1{
 	color: white;
@@ -114,6 +116,32 @@ img{
     top:335px;
     left:730px;
     z-index: 12;
+}
+
+#katsuoinfo {
+    color: white;
+    width: 500px;
+    position: fixed;
+    top:510px;
+    left: 900px;
+    opacity: 0;
+}
+
+#gingerinfo {
+    color: white;
+    width: 500px;
+    position: fixed;
+    top:310px;
+    left: 900px;
+    opacity: 0;
+}
+
+#katsuoname {
+    color: white;
+    position: fixed;
+    top:680px;
+    left:740px;
+    z-index: 5;
 }
 
 

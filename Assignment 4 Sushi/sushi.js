@@ -187,13 +187,54 @@ $(document).scroll(function(){
     });
 ;
 
+$(document).scroll(function(){
+        if ($(window).scrollTop() > 550-278) {
+            document.getElementById("bonito").style.left = 550 + 278 - $(window).scrollTop()  + "px";
+            document.getElementById("nigiririce").style.left = 610 + 278 - $(window).scrollTop()  + "px";
+            document.getElementById("bonitoginger").style.left = 690 + 278 - $(window).scrollTop()  + "px";
+            document.getElementById("bonitoonion1").style.left = 747 + 278 - $(window).scrollTop()  + "px";
+            document.getElementById("bonitoonion2").style.left = 710 + 278 - $(window).scrollTop()  + "px";
+            document.getElementById("bonitoonion3").style.left = 735 + 278 - $(window).scrollTop()  + "px";
+            document.getElementById("bonitoonion4").style.left = 720 + 278 - $(window).scrollTop()  + "px";
+            document.getElementById("bonitoonion5").style.left = 740 + 278 - $(window).scrollTop()  + "px";
+            document.getElementById("bonitoonion6").style.left = 720 + 278 - $(window).scrollTop()  + "px";
+            document.getElementById("bonitoonion7").style.left = 740 + 278 - $(window).scrollTop()  + "px";
+            document.getElementById("bonitoonion8").style.left = 713 + 278 - $(window).scrollTop()  + "px";
+            document.getElementById("bonitoonion9").style.left = 708 + 278 - $(window).scrollTop()  + "px";
+            document.getElementById("bonitoonion10").style.left = 730 + 278 - $(window).scrollTop()  + "px";
+        }
+    });
+;
 
+$(document).scroll(function(){
+        if ($(window).scrollTop() > 529) {
+            document.getElementById("katsuoinfo").style.opacity = 1;
+        }
+        else {
+            document.getElementById("katsuoinfo").style.opacity = 0;
+        }
+    });
+;            
 
+$(document).scroll(function(){
+        if ($(window).scrollTop() > 529) {
+            document.getElementById("gingerinfo").style.opacity = 1;
+        }
+        else {
+            document.getElementById("gingerinfo").style.opacity = 0;
+        }
+    });
+;       
 
-
-
-
-
+$(document).scroll(function(){
+        if ($(window).scrollTop() > 130) {
+            document.getElementById("katsuoname").style.opacity = 0;
+        }
+        else {
+            document.getElementById("katsuoname").style.opacity = 1;
+        }
+    });
+;       
 
 
 
