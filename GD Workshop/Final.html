@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head> 
-  <title>Visual representation</title>
+  <title>Visual Representation</title>
   <style type="text/css">
     body {
    background-color: rgb(59,165,155);
@@ -11,6 +11,7 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
+    opacity: 1;
   }
 
   #button {
@@ -23,13 +24,45 @@
 </head>
 <body>
   
-  <img id="target" src="http://i63.tinypic.com/keuonm.jpg" width="1200px" height="800px" opacity="1" />
+  <img id="target" src="http://i63.tinypic.com/keuonm.jpg" width="1200px" height="800px" />
   <div>
-  <input id="button" type="button" onclick="nextPic()" value="Workout!"/>
+  <input id="button" type="button" value="Workout!"/>
   </div>
   
-  
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">   
+</script>
     <script>
+var progress = 1;
+
+function pong() {progress = progress +0.3 }
+function ping() {progress = progress -0.5 }
+
+setInterval(function(){ 
+  pong(); Workout();
+  }, 1000);
+
+if (progress > 1.5) {
+setInterval(function(){ 
+  ping();
+  }, 1000);}
+
+      $("#button").click(function(){
+        Workout()
+      }
+      )
+    function Workout() {
+
+      
+      $("#target").css("opacity",progress);
+
+      progress = progress - 0.1;
+
+      if (progress < 0.01){
+       progress = progress + 1;
+       nextPic()};
+
+    }
+
     var target = document.getElementById('target');
     var counter = 0;
     var myPictures = [
